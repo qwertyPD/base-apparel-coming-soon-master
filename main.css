@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 180px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.container__left {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 28vh;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.container__left h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+}
+
+.container__left h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.description {
+    margin-top: 20px;
+    color: hsl(0, 36%, 70%);
+    max-width: 450px;
+    line-height: 1.5em;
+}
+
+.container__left form {
+    position: absolute;
+    margin-top: 20px;
+    width: 450px;
+}
+
+.input-email {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    padding-left: 30px;
+    outline: none;
+    border: 1px solid hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    position: absolute;
+    background: transparent;
+}
+
+.container__left form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 0px 18px 1px hsla(0, 36%, 70%, 0.592);
+}
+
+.container__left form button:hover {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}
+
+.icon-error {
+    display: none;
+    position: absolute;
+    right: 100px;
+    margin-top: 13px;
+}
+
+.text-error {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 12px;
+    margin-top: 20px;
+    color: hsl(0, 93%, 68%);
+}
+
+.container__right {
+    width: 80%;
+    height: auto;
+    background-size: cover;
+    background-image: url(/images/hero-desktop.jpg);
+}
+
+.error {
+    display: block;
+    border-color: hsl(0, 93%, 68%);
+    border-width: 2px;
+}
+
+@media (max-width: 1180px) {
+    header {
+        width: 100px;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container__left {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding: 0;
+        margin-top: 40px;
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+
+    .container__right {
+        margin-top: 90px;
+        width: 100%;
+        height: 290px;
+        background-size: cover;
+        background-image: url(/images/hero-desktop.jpg);
+    }
+
+    .container__left h1 {
+        text-transform: uppercase;
+        font-size: 3em;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+    }
+    
+    .container__left h1 span {
+        color: hsl(0, 36%, 70%);
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .description {
+        margin: 0 auto;
+        margin-top: 20px;
+        color: hsl(0, 36%, 70%);
+        max-width: 450px;
+        line-height: 1.5em;
+    }
+    .container__left form {
+        position: absolute;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .input-email {
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 50px;
+        border-radius: 50px;
+        outline: none;
+        border: 1px solid hsl(0, 36%, 70%);
+        font-family: 'Josefin Sans', sans-serif;
+        color: hsl(0, 36%, 70%);
+        font-size: 16px;
+        background: transparent;
+    }
+    
+    .container__left form button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        width: 60px;
+        height: 50px;
+        border: none;
+        border-radius: 50px;
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        box-shadow: 0px 0px 18px 1px hsla(0, 36%, 70%, 0.592);
+    }
+}
